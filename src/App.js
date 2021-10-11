@@ -25,7 +25,7 @@ class App extends React.Component {
         <div className='container'>
           <header>
             <div className='wrapper'>
-              <span>React and contentful</span>
+              <span>Amaizing Colection of Recepies</span>
             </div>
           </header>
           <main>
