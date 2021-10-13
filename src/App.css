@@ -110,3 +110,12 @@ main .wrapper {
   font-size: 1.8em;
   color: maroon;
 }
+
+.listOfArticles {
+  color: SaddleBrown;
+  background-color: SeaShell;
+}
+
+.linkToArticle {
+  
+}
