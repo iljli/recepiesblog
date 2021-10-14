@@ -6,9 +6,9 @@ const Posts = ({ posts }) => {
     return (
         <div>
             {posts.map((article, index) => (
-                {/* <Route path={`/articles/:${article.fields.name.replaceAll(" ", "")}?`}> */}
+                <Route path={`/articles/:${article.fields.name.replaceAll(" ", "")}?`}>
                     <Post article={article} key={index} />
-                {/* </Route> */}
+                </Route>
             )
 
             )}
@@ -21,7 +21,7 @@ export default Posts
 {/* <Switch> */ }
 {/* <Route path={`/articles/:${article.fields.name.replaceAll(" ", "")}?`}> */ }
 {/* <Link to={`/articles/${article.fields.name.replaceAll(" ", "")}`}> */ }
-// <Post article={article} key={index} />
+{/* <Post article={article} key={index} /> */}
 {/* </Link> */ }
 {/* </Route> */ }
 {/* </Switch> */ }
