@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Link, Route } from "react-router-dom";
 import marked from 'marked'
 const { DateTime } = require("luxon");
 
@@ -19,7 +20,6 @@ const Post = ({ article }) => {
         year: addZero(DateTime.fromISO(lastUpdated).year),
         month: addZero(DateTime.fromISO(lastUpdated).month),
         day: addZero(DateTime.fromISO(lastUpdated).day),
-
     }
 
     return (
@@ -34,3 +34,9 @@ const Post = ({ article }) => {
 }
 
 export default Post
+
+            {/* <Link className="notSetYet" to={`/articles/${name.replaceAll(" ", "")}`}> */}
+            {/* <Route path={`/articles/${name.replaceAll(" ", "")}?`}> */}
+            // <h2 className={'title'}>{name}</h2>
+            {/* </Route> */}
+            {/* </Link> */}
