@@ -3,7 +3,6 @@ import './App.css';
 import { client } from './client';
 import Posts from './components/Posts';
 import List from './components/List';
-import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
   // constructor(props) {
@@ -33,7 +32,7 @@ class App extends React.Component {
         <div className='container'>
 
           <header>
-            <div className='wrapper'>
+            <div className='wrapper' id="home">
               <span>Amaizing Colection of Recepies</span>
             </div>
           </header>
@@ -41,13 +40,12 @@ class App extends React.Component {
           <div>
             <List posts={this.state.articles} />
           </div>
-         
+
           <main>
             <div className='wrapper'>
               <Posts posts={this.state.articles} />
             </div>
           </main>
-
         </div>
       </div>
     );

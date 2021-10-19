@@ -34,15 +34,15 @@ ol {
 }
 
 h1 {
-  font-size: 1.9em;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.r2em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.0rem;
 }
 
 h1,
@@ -74,6 +74,7 @@ header {
   background: SaddleBrown;
   text-align: center;
   color: #fff;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -85,7 +86,7 @@ header {
 
 .logo {
   line-height: 60px;
-  font-size: 27px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -107,15 +108,28 @@ main .wrapper {
 
 .title {
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.5rem;
   color: maroon;
 }
 
 .listOfArticles {
   color: SaddleBrown;
   background-color: SeaShell;
+  padding: 30px 30px 30px 60px;
 }
 
-.linkToArticle {
+/* .linkToArticle {
   
+} */
+
+button {
+  background-color: SaddleBrown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
 }

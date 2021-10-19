@@ -1,6 +1,10 @@
 import React from 'react'
 // import { Link, Route } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import marked from 'marked'
+import '../App.css';
+
+
 const { DateTime } = require("luxon");
 
 const Post = ({ article }) => {
@@ -22,21 +26,18 @@ const Post = ({ article }) => {
         day: addZero(DateTime.fromISO(lastUpdated).day),
     }
 
+
     return (
-        <div className={'post'}>
+        <div className={'post'} id={article.fields.name.replaceAll(" ", "")}>
             <h2 className={'title'}>{name}</h2>
             {featureImage && <img className='featureImage' src={featureImage.fields.file.url} alt={name} title={name} />}
             <section dangerouslySetInnerHTML={{ __html: postDescription }} />
             {lastUpdated && <p>Last updated: {timestamp.year}/{timestamp.month}/{timestamp.day} {timestamp.hour}:{timestamp.minute}:{timestamp.second}</p>}
-
+            <HashLink className="linkToArticle" smooth to='/page#home'>
+                <button> Go Up</button>
+            </HashLink>
         </div>
     )
 }
 
 export default Post
-
-            {/* <Link className="notSetYet" to={`/articles/${name.replaceAll(" ", "")}`}> */}
-            {/* <Route path={`/articles/${name.replaceAll(" ", "")}?`}> */}
-            // <h2 className={'title'}>{name}</h2>
-            {/* </Route> */}
-            {/* </Link> */}
