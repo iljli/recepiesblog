@@ -53,3 +53,9 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+//creation of an API
+
+const express = require('express');
+const blog = express();
